@@ -18,7 +18,7 @@ test.describe('Visual Testing', () => {
     })
 
     // Masking sensitive data
-    test.only('Masking sensitive data', async ({ page }) => {
+    test('Masking sensitive data', async ({ page }) => {
         await page.goto('https://the-internet.herokuapp.com/login');
         await page.fill('#username', 'tomsmith');
         await page.fill('#password', 'SuperSecretPassword!');

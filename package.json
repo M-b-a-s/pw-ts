@@ -6,9 +6,9 @@
   "scripts": {
     "test": "npx playwright test",
     "test:ui": "npx playwright test --ui",
+    "test:report": "npx playwright test && show-report",
     "test:headed": "npx playwright test --headed",
     "test:debug": "npx playwright test --debug",
-    "codegen": "npx playwright codegen",
     "install:browser": "npx playwright install"
   },
   "keywords": [],

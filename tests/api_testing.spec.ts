@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import users from "../test_data/reqres_users_page2.json"
 
-test.describe.only('API Testing', () => {
+test.describe('API Testing', () => {
     // GET all users - Compare to saved response
     test('GET all users - Compare to saved response', async ({ request }) => {
         const response = await request.get('https://reqres.in/api/users?page=2');

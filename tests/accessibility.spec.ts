@@ -15,7 +15,7 @@ test('General Accessibilty checks', async ({ page }) => {
     expect(accessibilityScanResults.violations).toEqual([]);
 });
 
-test.only('Custom tags verification', async ({ page }) => {
+test('Custom tags verification', async ({ page }) => {
     // Navigate to page
     await page.goto("https://the-internet.herokuapp.com/login");
 
